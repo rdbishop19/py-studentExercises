@@ -7,6 +7,11 @@ class Student:
         self.assignments = list()
 
     def add_assignment(self, exercise):
-        self.assigngments.append(exercise)
+        self.assignments.append(exercise)
 
+    def show_assignments(self):
+        print()
+        print(f'{self.first_name} has the following assignments:')
+        for assignment in self.assignments:
+            print(f'{assignment.name} ({assignment.language})')
     
