@@ -18,7 +18,7 @@ class Student:
         #     print(f'{assignment.name} ({assignment.language})')
         assignment_array = []
         for assignment in self.assignments:
-            assignment_array.append(assignment.name)
+            assignment_array.append(f'{assignment.name} ({assignment.language})')
         formatted_list_string = format_list(assignment_array)
         print(f'{self.first_name} is working on {formatted_list_string}')
     

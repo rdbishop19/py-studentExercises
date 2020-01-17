@@ -32,6 +32,7 @@ jenna = Instructor("Andy", "Collins", "acollins", "Comedy King", cohort_38)
 
 joe_shep.assign_exercise(ryan_b, exercise_one)
 joe_shep.assign_exercise(ryan_b, exercise_two)
+jenna.assign_exercise(ryan_b, exercise_three)
 jisie.assign_exercise(bito_m, exercise_one)
 jisie.assign_exercise(bito_m, exercise_three)
 jenna.assign_exercise(shirish_s, exercise_two)
