@@ -39,7 +39,8 @@ jenna.assign_exercise(shirish_s, exercise_four)
 joe_shep.assign_exercise(ryan_c, exercise_four)
 joe_shep.assign_exercise(ryan_c, exercise_two)
 
-ryan_b.show_assignments()
-bito_m.show_assignments()
-shirish_s.show_assignments()
-ryan_c.show_assignments()
+students = [ryan_b, ryan_c, shirish_s, bito_m]
+exercises = [exercise_one, exercise_two, exercise_three, exercise_four]
+
+for student in students:
+    student.show_assignments()
