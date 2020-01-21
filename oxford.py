@@ -1,6 +1,15 @@
-def format_list(arr, oxford=True):
+def format_list(arr, oxford=True, conj="and"):
+    '''
+    formats an array of items to be comma-separated
+
+    parameters:
+    arr = array item to be iterated
+    oxford = boolean to include/exclude Oxford Comma
+    conj = string to choose different coordinating conjuction than default "and"
+    '''
+    
     if len(arr) == 2:
-        return f'{arr[0]} and {arr[1]}'
+        return f'{arr[0]} {conj} {arr[1]}'
     else:
         formatted_list = ''
         for i in range(0, len(arr)):
@@ -8,9 +17,9 @@ def format_list(arr, oxford=True):
                 formatted_list = arr[i]
             elif i == len(arr)-1:
                 if oxford:
-                    formatted_list += f', and {arr[i]}'
+                    formatted_list += f', {conj} {arr[i]}'
                 else:
-                    formatted_list += f' and {arr[i]}'
+                    formatted_list += f' {conj} {arr[i]}'
             else:
                 formatted_list += f', {arr[i]}'
 
